@@ -9,66 +9,11 @@
       "rightHanded": true
     },
     {
-      "name": "",
+      "name": "Jordan Twyman",
       "image": "",
-      "age": "",
-      "favFood": "",
-      "rightHanded": "!!true",
+      "age": "27",
+      "rightHanded": true,
       "id": 2
-    },
-    {
-      "name": "",
-      "image": "",
-      "age": "",
-      "favFood": "",
-      "rightHanded": "true",
-      "id": 3
-    },
-    {
-      "name": "",
-      "image": "",
-      "age": "",
-      "favFood": "",
-      "rightHanded": "true",
-      "id": 4
-    },
-    {
-      "name": "",
-      "image": "",
-      "age": "27",
-      "favFood": "",
-      "rightHanded": "true",
-      "id": 5
-    },
-    {
-      "name": "Jordan Twyman",
-      "image": "",
-      "age": "27",
-      "favFood": "Turkey",
-      "rightHanded": "true",
-      "id": 6
-    },
-    {
-      "name": "Jordan Twyman",
-      "image": "",
-      "favFood": "",
-      "id": 7
-    },
-    {
-      "name": "",
-      "image": "",
-      "age": "",
-      "favFood": "",
-      "rightHanded": true,
-      "id": 8
-    },
-    {
-      "name": "",
-      "image": "",
-      "age": false,
-      "favFood": "",
-      "rightHanded": true,
-      "id": 9
     }
   ]
 }

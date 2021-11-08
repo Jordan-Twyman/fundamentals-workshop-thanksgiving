@@ -1,5 +1,7 @@
 import { GuestsList } from "./PartyList.js"
 import { saveGuests } from "./PartyProvider.js"
+import { GuestSelect } from "./PartySelect.js"
+
 
 const contentTarget = document.querySelector(".guests-form")
 
@@ -8,7 +10,7 @@ document.querySelector("body").addEventListener("click", clickEvent => {
 
     let guestHanded = document.querySelector('#guest-handed').value === "true"
 
-    let guestAge = document.querySelector('#guest-age')[whole_number].value
+    let guestAge = document.querySelector('#guest-age').value
 
     const newGuest = {
         name: document.querySelector("#guest-name").value,
@@ -51,23 +53,29 @@ export const GuestsForm = () => {
     <label for="guestage"> Age...</label>
     </div>
     <input type="text" id="guest-age" name="journalConcepts" id="concept-text" />
-    <div>
-    <label for="guestfood">  Your favorite Thanksgiving dish...</label>
+    <div  id="guest-food" class="guests-food-filter">
     </div>
-    <input type="text" id="guest-food" name="journalConcepts" id="concept-text" />
     <div>
     <label for="guesthanded">Are you right handed...</label>
     </div>
-<div>
-  <input type="radio" id="guest-handed" name="drone" value="true"
+    <div>
+    <input type="radio" id="guest-handed" name="drone" value="true"
          checked>
   <label for="false">Yes</label>
-</div>
-
+    </div>
 <div>
   <input type="radio" id="guest-handed" name="drone" value="true" >
   <label for="false">No</label>
 </div>
+<select class="dropdown" id="foodSelect">
+<option value="0">Please select an dish...</option>
+<option value="mashed potatoes">mashed potatoes</option>
+<option value="stuffing">stuffing</option>
+<option value="greenbeans">greenbeans</option>
+<option value="cranberry sauce">cranberry sauce</option>
+<option value="turkey">turkey</option>
+
+</select>
 <div>
     <button type="button" class="guest-button" id="saveGuest">
 Confirm Reservation  
@@ -76,3 +84,5 @@ Confirm Reservation
     </section>
     `
 }
+
+

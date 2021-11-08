@@ -1,15 +1,10 @@
-import { Guest } from "./Party.js";
 
 let list = []
 
 
 export const useGuests = () => {
     return list.slice();
-    const sortByDate = list.sort(
-        (currentGuest, nextGuest) =>
-    Date.parse(currentGuest.date) - Date.parse(nextGuest,date)
-    )
-    return sortByDate
+   
 }
 
 export const getGuests = ()  => {
