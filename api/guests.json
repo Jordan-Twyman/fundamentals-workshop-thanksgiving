@@ -1,0 +1,29 @@
+{
+  "guests": [
+    {
+      "id": 1,
+      "image": "",
+      "name": "Jordan Twyman",
+      "age": "27",
+      "favFood": "Macaroni and Cheese",
+      "rightHanded": true
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "name": "Jordan Twyman",
+      "image": "C:\\fakepath\\Headshots 1.jpg",
+      "age": "27",
+      "favFood": "Turkey",
+      "rightHanded": "yes",
+      "id": 5
+    }
+  ]
+}
