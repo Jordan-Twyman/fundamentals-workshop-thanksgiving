@@ -6,12 +6,16 @@ const contentTarget = document.querySelector(".guests-form")
 document.querySelector("body").addEventListener("click", clickEvent => {
  if (clickEvent.target.id === "saveGuest") {
 
+    let guestHanded = document.querySelector('#guest-handed').value === "true"
+
+    let guestAge = document.querySelector('#guest-age')[whole_number].value
+
     const newGuest = {
         name: document.querySelector("#guest-name").value,
         image: document.querySelector("#guest-image").value,
-        age: document.querySelector("#guest-age").value,
+        age: guestAge,
         favFood: document.querySelector("#guest-food").value,
-        rightHanded: document.querySelector("#guest-handed").value
+        rightHanded: guestHanded
     }
     console.log (newGuest)
 
@@ -54,13 +58,21 @@ export const GuestsForm = () => {
     <div>
     <label for="guesthanded">Are you right handed...</label>
     </div>
-    <select id="guest-handed" name="handedness">
-    <option value="true" {""}>YES</option>
-    <option value="false">NO</option>
-    </select>
+<div>
+  <input type="radio" id="guest-handed" name="drone" value="true"
+         checked>
+  <label for="false">Yes</label>
+</div>
+
+<div>
+  <input type="radio" id="guest-handed" name="drone" value="true" >
+  <label for="false">No</label>
+</div>
+<div>
     <button type="button" class="guest-button" id="saveGuest">
 Confirm Reservation  
 </button>
+</div>
     </section>
     `
 }
