@@ -6,18 +6,19 @@ import { GuestSelect } from "./PartySelect.js"
 const contentTarget = document.querySelector(".guests-form")
 
 document.querySelector("body").addEventListener("click", clickEvent => {
- if (clickEvent.target.id === "saveGuest") {
+ if (clickEvent.target.id === "saveGuest"){ 
+//  console.log('hello world')
+ 
 
-    let guestHanded = document.querySelector('#guest-handed').value === "true"
 
-    let guestAge = document.querySelector('#guest-age').value
+    
 
     const newGuest = {
         name: document.querySelector("#guest-name").value,
         image: document.querySelector("#guest-image").value,
-        age: guestAge,
+        age: +document.querySelector('#guest-age').value,
         favFood: document.querySelector("#guest-food").value,
-        rightHanded: guestHanded
+        rightHanded: document.querySelector('#guest-handed').checked 
     }
     console.log (newGuest)
 
@@ -29,22 +30,21 @@ document.querySelector("body").addEventListener("click", clickEvent => {
     document.querySelector("#guest-image").value=""
     document.querySelector("#guest-age").value=""
     document.querySelector("#guest-food").value=""
-    document.querySelector("#guest-handed").value=""
+    document.querySelector("#guest-handed").checked=false
 
 
  }   
 })
 
 export const GuestsForm = () => {
-    contentTarget.innerHTML = `
-    <section class="guests-form>
-    <h2 class="form-heading"> Guests List</h2>
+    contentTarget.innerHTML += `
+    <section id="guests-reservation>
+    <h1 class="form-heading"> Thanksgiving Reservation </h1>
     <div>
     <label for="selfie">Please upload a headshot...</label>
     </div>
-    <input type="file"
-       id="guest-image" name="avatar"
-       accept="image/png, image/jpeg">
+    <input type="text"
+       id="guest-image" name="avatar">
     <div>
     <label for="guestName"> First and Last Name...</label>
     </div>
@@ -52,33 +52,31 @@ export const GuestsForm = () => {
     <div>
     <label for="guestage"> Age...</label>
     </div>
-    <input type="text" id="guest-age" name="journalConcepts" id="concept-text" />
+    <input type="number" id="guest-age" name="journalConcepts" id="concept-text" />
     <div  id="guest-food" class="guests-food-filter">
     </div>
     <div>
-    <label for="guesthanded">Are you right handed...</label>
+    <label for="guesthanded">Are you righthanded?</label>
     </div>
-    <div>
-    <input type="radio" id="guest-handed" name="drone" value="true"
-         checked>
-  <label for="false">Yes</label>
-    </div>
-<div>
-  <input type="radio" id="guest-handed" name="drone" value="true" >
-  <label for="false">No</label>
-</div>
+    <input type="checkbox" id="guest-handed" name="drone" value="true"
+         unchecked>
+
+         <section>
+
 <select class="dropdown" id="foodSelect">
-<option value="0">Please select an dish...</option>
-<option value="mashed potatoes">mashed potatoes</option>
+<option value="0" >Please select an dish...</option>
+<option value="mashed potatoes" id="guest-food">mashed potatoes</option>
 <option value="stuffing">stuffing</option>
 <option value="greenbeans">greenbeans</option>
 <option value="cranberry sauce">cranberry sauce</option>
 <option value="turkey">turkey</option>
 
 </select>
+
+</section>
 <div>
     <button type="button" class="guest-button" id="saveGuest">
-Confirm Reservation  
+Add Guest  
 </button>
 </div>
     </section>

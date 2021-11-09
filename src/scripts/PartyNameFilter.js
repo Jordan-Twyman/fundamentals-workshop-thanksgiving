@@ -22,8 +22,5 @@ eventHub.addEventListener("change", (eventObj) => {
         GuestsList(filterObject)
     }
 })
-const render = dishCollection => {
-filterNames.innerHTML = `
-    
-`
-}
+
+filterNames.innerHTML = "";

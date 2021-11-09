@@ -2,9 +2,11 @@ import { Guest } from "./Party.js";
 import { getGuests, useGuests } from "./PartyProvider.js"
 
 
-const contentTarget = document.querySelector(".guests-list")
+
 
 export const GuestsList = () => {
+const contentTarget = document.querySelector(".guests-list")
+
     getGuests()
     .then(() => {
         let allGuests = useGuests();
@@ -14,7 +16,7 @@ export const GuestsList = () => {
 
         });
 
-        contentTarget.innerHTML = `
+        contentTarget.innerHTML += `
         <h2>Guest List:</h2>
         ${listHTML}
         `

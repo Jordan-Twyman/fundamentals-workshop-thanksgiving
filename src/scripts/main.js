@@ -5,4 +5,4 @@ import { GuestSelect } from "./PartySelect.js";
 
 GuestsForm();
 GuestsList();
-GuestSelect();
+// GuestSelect();
