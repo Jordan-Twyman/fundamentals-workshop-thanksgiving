@@ -26,4 +26,14 @@ export const saveGuests = guest => {
     .then(getGuests)
 }
 
- 
+export const updateGuest = list => {
+
+    return fetch(`http://localhost:8088/guests/${list.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(list)
+    })
+
+}
