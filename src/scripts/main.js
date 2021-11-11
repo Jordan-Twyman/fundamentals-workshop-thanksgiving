@@ -1,8 +1,9 @@
-import { GuestsForm } from "./PartyForm.js";
-import { GuestsList } from "./PartyList.js";
-import { GuestSelect } from "./PartySelect.js";
-
+import { GuestsForm } from "./party/PartyForm.js";
+import { GuestsList } from "./party/PartyList.js";
+import { FoodSelect } from "./food/FoodSelect.js";
+import { PartySearch } from "./PartyNameFilter.js"
 
 GuestsForm();
 GuestsList();
-// GuestSelect();
+FoodSelect();
+PartySearch();

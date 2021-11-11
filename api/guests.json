@@ -4,8 +4,103 @@
       "id": 1,
       "name": "Michael Jordan",
       "age": "45",
+      "favFood": "Turkey",
+      "rightHanded": "true",
+      "image": [
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Michael Jackson",
+      "age": "50",
+      "favFood": "greenbeans",
+      "rightHanded": "true",
+      "image": [
+        ""
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Jordan Twyman",
+      "age": "28",
       "favFood": "undefined",
-      "rightHanded": "true"
+      "rightHanded": "false"
+    },
+    {
+      "name": "",
+      "image": [
+        ""
+      ],
+      "age": 0,
+      "rightHanded": false,
+      "id": 4
+    }
+  ],
+  "food": [
+    {
+      "id": 1,
+      "name": "Sweet Potatoes"
+    },
+    {
+      "id": 2,
+      "name": "Shaken Dirties"
+    },
+    {
+      "id": 3,
+      "name": "Cold Revenge"
+    },
+    {
+      "id": 4,
+      "name": "Turkey"
+    },
+    {
+      "id": 5,
+      "name": "Ham"
+    },
+    {
+      "id": 6,
+      "name": "Mashed Potatoes"
+    },
+    {
+      "id": 7,
+      "name": "Mashed Potatoes with Gravy"
+    },
+    {
+      "id": 8,
+      "name": "Green Beans"
+    },
+    {
+      "id": 9,
+      "name": "Collard Greens"
+    },
+    {
+      "id": 10,
+      "name": "Macaroni and Cheese"
+    },
+    {
+      "id": 11,
+      "name": "Baked Beans"
+    },
+    {
+      "id": 12,
+      "name": "Potato Salad"
+    },
+    {
+      "id": 13,
+      "name": "Macaroni Salad"
+    },
+    {
+      "id": 14,
+      "name": "Stuffing"
+    },
+    {
+      "id": 15,
+      "name": "Pumpkin Pie"
+    },
+    {
+      "id": 16,
+      "name": "Anything Vegan"
     }
   ]
 }
